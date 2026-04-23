@@ -55,6 +55,18 @@ const Dashboard = ()=> {
 
   const status = getStatus();
 
+  const getStatusStyle = () => {
+    if (status === "High Risk") {
+      return "orangeStatus";
+    }
+    if (status === "Warning") {
+      return "redStatus";
+    }
+    return "";
+  };
+
+  const statusStyle = getStatusStyle();
+
   const getBoxStyle = () => {
     if (status === "High Risk") {
       return "box high-risk"
@@ -82,13 +94,13 @@ const Dashboard = ()=> {
         </div>
 
         <div className={getBoxStyle()} >
-          <h3>SpO₂ 🫁</h3>
+          <h3>Blood Oxygen 🫁</h3>
           <p>{vitals?.spo2 || "--"} %</p>
         </div>
       </div>
 
       <div className="statusBar" >
-        <h2>Status: {status}</h2>
+        <h2>Status: <span className={statusStyle}>{status}</span></h2>
       </div>
 
       <div className="chart">
