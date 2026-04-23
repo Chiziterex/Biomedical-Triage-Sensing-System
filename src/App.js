@@ -80,7 +80,7 @@ const Dashboard = ()=> {
   return (
     <div className="container">
       <h1>Monitoring Dashboard</h1>
-      {/* <p><strong>Mode:</strong> {CONFIG.MODE}</p> */}
+      <p className="mode"><span>Mode:</span> {CONFIG.MODE}</p>
 
       <div className="boxContainer">
         <div className={getBoxStyle()}>

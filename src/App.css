@@ -7,6 +7,7 @@
   --blurship: rgb(0, 0, 0, 0.2);
   --whitesmoke: whitesmoke;
   --light-orange: #ffe5e5;
+  --black: rgb(0,0,0);
 }
 
 * {
@@ -30,6 +31,15 @@
 
 .container h1 {
   text-align: center;
+}
+
+.container .mode {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.container .mode span {
+ font-weight: 900;
 }
 
 .boxContainer {

@@ -1,7 +1,11 @@
 @media (max-width: 600px){
    .chart{
-  margin: 0 5px 10px 5px;
-} 
+  margin: 0 10px 10px 0;
+   }
+  .chart h2 {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
 }
 
 @media (max-width: 450px){
